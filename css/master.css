@@ -4,7 +4,7 @@
 
 @font-face {
     font-family: 'Neue Machina';
-    src: url('NeueMachina-Ultralight.eot');
+    src: url('../fonts/NeueMachina-Ultralight.eot');
     src: local('../fonts/Neue Machina Ultralight'), local('NeueMachina-Ultralight'),
         url('../fonts/NeueMachina-Ultralight.eot?#iefix') format('embedded-opentype'),
         url('../fonts/NeueMachina-Ultralight.woff2') format('woff2'),
