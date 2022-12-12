@@ -20,7 +20,7 @@ p {
 h1 {
   font-family: 'Okno';
   font-size: 380px;
-  line-height: 335px;
+  line-height: 400px;
   letter-spacing: 0.03em;
   animation: header 8s linear infinite;
 }

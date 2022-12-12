@@ -29,13 +29,9 @@
 }
 
 @font-face {
-    font-family: 'Okno';
-    src: url('../fonts/Okno.eot');
-    src: local('Okno'), local('Okno'),
-        url('../fonts/Okno.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Okno.woff2') format('woff2'),
-        url('../fonts/Okno.woff') format('woff'),
-        url('../fonts/Okno.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
+	font-family: 'Conv_Okno';
+	src: url('../fonts/Okno.eot');
+	src: local('☺'), url('../fonts/Okno.woff') format('woff'), url('../fonts/Okno.ttf') format('truetype'), url('../fonts/Okno.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
