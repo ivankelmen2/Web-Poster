@@ -36,6 +36,6 @@
         url('../fonts/Okno.woff2') format('woff2'),
         url('../fonts/Okno.woff') format('woff'),
         url('../fonts/Okno.ttf') format('truetype');
-    font-weight: 800;
+    font-weight: 500;
     font-style: normal;
 }

@@ -1,3 +1,64 @@
 body {
-  font-family: Okno;
+  background: black;
+  color: white;
+  margin: -10px 0 -10px 22px;
+}
+
+header {
+  /* overflow: hidden; */
+}
+
+p {
+  font-family: 'Neue Machina';
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 130%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-family: 'Okno';
+  font-size: 380px;
+  line-height: 335px;
+  letter-spacing: 0.03em;
+  animation: header 8s linear infinite;
+}
+
+/* @keyframes header {
+  0% {margin-left: -2891px;}
+  100% {margin-left: 5782px;}
+} */
+
+.die__circle {
+  width: 400px;
+  height: 144px;
+  background: #FF5E00;
+  transform: rotate(-10deg);
+  border-radius: 50%;
+  position: absolute;
+  left: 335px;
+  top: 260px;
+  padding-top: 50px;
+  transition: .8s;
+}
+
+.die__circle:hover {
+  transform: rotate(10deg);
+}
+
+.die__circle p {
+  text-align: center;
+}
+
+.die__circle__back {
+  width: 400px;
+  height: 144px;
+  background: rgba(0, 0, 0, 0);
+  border: 2px solid #FF5E00;
+  transform: rotate(10deg);
+  border-radius: 50%;
+  position: absolute;
+  left: 335px;
+  top: 260px;
 }
