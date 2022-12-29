@@ -1,11 +1,11 @@
 body {
   background: black;
   color: white;
-  margin: -10px 0 -10px 22px;
-}
-
-header {
-  /* overflow: hidden; */
+  margin: 0 auto;
+  overflow-x: hidden;
+  width: 1300px;
+  position: relative;
+  cursor: url('../cursor.png'), auto;
 }
 
 p {
@@ -17,18 +17,37 @@ p {
   text-transform: uppercase;
 }
 
-h1 {
-  font-family: 'Okno';
-  font-size: 380px;
-  line-height: 400px;
-  letter-spacing: 0.03em;
-  animation: header 8s linear infinite;
+header {
+  overflow: hidden;
+  clip-path: inset(0 0 0 0 round 10px);
+  margin: 20px;
+  margin-bottom: -4px;
+  width: 1253px;
+  height: 676px;
+  position: relative;
 }
 
-/* @keyframes header {
-  0% {margin-left: -2891px;}
-  100% {margin-left: 5782px;}
-} */
+.basketball {
+  margin-bottom: 20px;
+  animation: move__basketball 10s ease-in-out infinite;
+}
+
+.fromtheearth {
+  margin-left: -2200px;
+  animation: move__fromtheearth 19s ease-in-out infinite;
+}
+
+@keyframes move__fromtheearth {
+  0% {transform: translateX(0)}
+  50% {transform: translateX(51.7%);}
+  100% {transform: translateX(0)}
+}
+
+@keyframes move__basketball {
+  0% {transform: translateX(0)}
+  50% {transform: translateX(-42.3%);}
+  100% {transform: translateX(0)}
+}
 
 .die__circle {
   width: 400px;
@@ -42,6 +61,7 @@ h1 {
   padding-top: 50px;
   transition: .8s;
 }
+
 
 .die__circle:hover {
   transform: rotate(10deg);
@@ -61,4 +81,322 @@ h1 {
   position: absolute;
   left: 335px;
   top: 260px;
+}
+
+.section__active {
+  overflow: hidden;
+  clip-path: inset(0 0 0 0 round 10px);
+  margin: 20px;
+  height: 1178px;
+  display: flex;
+}
+
+.team {
+  position: relative;
+  margin-left: 20px;
+  width: 387px;
+  clip-path: inset(0 0 0 0 round 10px);
+  animation: team 5s infinite linear;
+  animation-play-state: running;
+}
+
+.team:hover {
+  animation-play-state: paused;
+}
+
+.wrapp {
+  clip-path: inset(0 0 0 0 round 10px);
+}
+
+@keyframes team {
+  0% {margin-top: -1862px;}
+  100% {margin-top: 0;}
+}
+
+.player {
+  overflow: hidden;
+  background: white;
+  height: 443px;
+  width: 387px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  padding: 70px 0 0 50px;
+}
+
+.player:hover {
+  background-color: #FF5E00;
+}
+
+.team__and__action {
+  position: relative;
+  display: flex;
+  height: 1268px;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.die__star {
+  width: 320px;
+  height: 320px;
+  background-repeat: space;
+  background-image: url('../img/star.svg');
+  position: absolute;
+  left: -40px;
+  top: 26px;
+  padding-top: 120px;
+  padding-left: 77px;
+  animation: star 8s linear infinite;
+  z-index: 1;
+}
+
+.die__star:hover {
+  animation-play-state: paused;
+}
+
+.die__star p {
+  width: 150px;
+  transform: rotate(18deg);
+  text-align: center;
+}
+
+@keyframes star {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
+}
+
+.active {
+  margin-left: 20px;
+  width: 847px;
+  height: 1368px;
+  clip-path: inset(0 0 0 0 round 10px);
+}
+
+.balls {
+  clip-path: inset(0 0 0 0 round 10px);
+  height: 617px;
+}
+
+.die__ball {
+  width: 238px;
+  height: 238px;
+  border-radius: 50%;
+  background: #FF5E00;
+  padding-top: 92px;
+  position: absolute;
+  top: 110px;
+  left: 950px;
+  transition: .4s;
+  border: 2px solid #FF5E00;
+}
+
+.die__ball:hover {
+  background: rgba(0, 0, 0, 0);
+}
+
+.die__ball p {
+  text-align: center;
+  transform: rotate(-15deg);
+}
+
+.game__and__tickets {
+  clip-path: inset(0 0 0 0 round 10px);
+  height: 631px;
+  margin-top: 20px;
+  display: flex;
+}
+
+.game {
+  position: relative;
+  width: 386px;
+  background-image: url('../img/area.svg');
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.tickets {
+  width: 441px;
+  clip-path: inset(0 0 0 0 round 10px);
+  margin-top: -50px;
+}
+
+.tickets img {
+  margin-bottom: 12px;
+}
+
+.tick1 {
+  margin-left: -100px;
+  animation: tick 3s infinite ease-in-out;
+    animation-direction: alternate;
+}
+
+.tick2 {
+  margin-left: 0px;
+  animation: tick 3s infinite ease-in-out;
+  animation-direction: alternate-reverse;
+}
+
+.tick3 {
+  margin-left: -130px;
+  animation: tick 3s infinite ease-in-out;
+  animation-direction: alternate;
+}
+
+.tick4 {
+  margin-left: -70px;
+  animation: tick 3s infinite ease-in-out;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes tick {
+  0% {transform: translateX(0);}
+  100% {transform: translateX(-40%);}
+}
+
+
+.tape {
+  height: 50px;
+  padding-top: 7px;
+  background: #FF5E00;
+  overflow: hidden;
+  object-fit: contain;
+  position: relative;
+}
+
+.tape__rotate {
+  height: 50px;
+  padding-top: 7px;
+  background: #FF5E00;
+  overflow: hidden;
+  object-fit: contain;
+  position: relative;
+  transform: rotate(-15deg);
+  margin-left: -200px;
+}
+
+.wrapper {
+  overflow-x: hidden;
+  width: 1300px;
+  height: 100vh;
+  position: absolute;
+  padding-top: -200px;
+}
+
+.row {
+  white-space: nowrap;
+  position: absolute;
+  animation: row 10s linear infinite;
+}
+
+.row::after {
+  content: "управляем гравитацией • управляем гравитацией • управляем гравитацией • управляем гравитацией • "
+}
+
+@keyframes row {
+  0% {transform: translateX(0);}
+  100% {transform: translateX(-50%);}
+}
+
+.gravity {
+  position: relative;
+}
+
+.gravity__button {
+  height: 300px;
+  width: 300px;
+  margin: 180px auto 180px auto;
+  border: solid 2px white;
+  border-radius: 50%;
+  position: relative;
+  padding: 130px 55px;
+}
+
+.gravity__button:hover {
+  border-color: #FF5E00;
+  color: #FF5E00;
+}
+
+.gravity__button:hover ~ .planet1 {
+  transform: translateY(-200px);
+}
+
+.gravity__button:hover ~ .planet2 {
+  transform: translateY(-400px);
+}
+
+.gravity__button:hover ~ .planet3 {
+  transform: translateY(-100px);
+}
+
+.gravity__button:hover ~ .planet4 {
+  transform: translateY(-500px);
+}
+
+.gravity__button:hover ~ .planet5 {
+  transform: translateY(-550px);
+}
+
+.gravity__button:hover ~ .planet6 {
+  transform: translateY(-50px);
+}
+
+.gravity__button:hover ~ .planet7 {
+  transform: translateY(-200px);
+}
+
+.gravity__button:hover ~ .planet8 {
+  transform: translateY(-400px);
+}
+
+.gravity__button:hover ~ .planet9 {
+  transform: translateY(-300px);
+}
+
+.gravity__button:hover ~ .planet10 {
+  transform: translateY(-100px);
+}
+
+footer {
+  position: relative;
+  color: white;
+  margin: 0 20px 20px 20px;
+  overflow: hidden;
+  clip-path: inset(0 0 0 0 round 10px);
+}
+
+@keyframes move__footer {
+  0% {transform: translateX(0)}
+  50% {transform: translateX(-35.5%);}
+  100% {transform: translateX(0)}
+}
+
+.footer__img {
+  animation: move__footer 10s infinite ease-in-out;
+}
+
+.text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 200px;
+}
+
+.logo {
+  mix-blend-mode: difference;
+}
+
+.text__p {
+  /* position: absolute;
+  top: 253px;
+  left: 20px; */
+  width: 200px;
+  text-transform: none;
+  font-size: 18px;
+  mix-blend-mode: difference;
+}
+
+.wrappe {
+  clip-path: inset(30 30 30 30 round 10px);
+  overflow-x: hidden;
 }

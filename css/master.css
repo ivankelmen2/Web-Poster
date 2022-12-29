@@ -2,6 +2,14 @@
 
 @import url('styles.css');
 
+@import url('balls.css');
+
+@import url('dots.css');
+
+@import url('planets.css');
+
+@import url('320.css');
+
 @font-face {
     font-family: 'Neue Machina';
     src: url('../fonts/NeueMachina-Bold.eot');

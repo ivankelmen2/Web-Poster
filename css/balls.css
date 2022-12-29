@@ -1,0 +1,160 @@
+.ball1 {
+  position: absolute;
+  left: 923px;
+  top: -323px;
+  clip-path: inset(45px 45px 45px 45px round 50%);
+  transition: .2s;
+}
+
+.ball1-1 {
+  position: absolute;
+  left: 500px;
+  top: -56px;
+  clip-path: inset(45px 45px 45px 45px round 50%);
+  transition: .2s;
+}
+
+.ball2 {
+  position: absolute;
+  left: 303px;
+  top: 310px;
+  z-index: 1;
+  clip-path: inset(45px 45px 45px 45px round 50%);
+  transition: .2s;
+}
+
+.ball3 {
+  position: absolute;
+  left: 1000px;
+  top: 404px;
+  clip-path: inset(45px 45px 45px 45px round 50%);
+  transition: .2s;
+}
+
+.ball3-1 {
+  position: absolute;
+  left: 1088px;
+  top: 292px;
+  clip-path: inset(45px 45px 45px 45px round 50%);
+  transition: .2s;
+}
+
+.ball4 {
+  position: absolute;
+  left: 845px;
+  top: 488px;
+  clip-path: inset(45px 45px 45px 45px round 50%);
+  transition: .2s;
+}
+
+.ball5 {
+  position: absolute;
+  left: 676px;
+  top: 276px;
+  clip-path: inset(20px 20px 20px 20px round 50%);
+  transition: .2s;
+}
+
+.ball6 {
+  position: absolute;
+  left: 657px;
+  top: 446px;
+  clip-path: inset(45px 45px 45px 45px round 50%);
+  transition: .2s;
+}
+
+.ball7 {
+  position: absolute;
+  left: 325px;
+  top: -140px;
+  clip-path: inset(10px 10px 10px 10px round 50%);
+  transition: .2s;
+}
+
+.ball8 {
+  position: absolute;
+  left: 196px;
+  top: 50px;
+  clip-path: inset(45px 45px 45px 45px round 50%);
+  transition: .2s;
+}
+
+.ball9 {
+  position: absolute;
+  left: 523px;
+  top: 372px;
+  clip-path: inset(45px 45px 45px 45px round 50%);
+  transition: .2s;
+}
+
+.ball10 {
+  position: absolute;
+  left: 633px;
+  top: 311px;
+  clip-path: inset(45px 45px 45px 45px round 50%);
+  transition: .2s;
+}
+
+.ball11 {
+  position: absolute;
+  left: 880px;
+  top: 333px;
+  clip-path: inset(40px 40px 40px 40px round 50%);
+  transition: .2s;
+}
+
+.ball12 {
+  position: absolute;
+  left: 632px;
+  top: -290px;
+  clip-path: inset(45px 45px 45px 45px round 50%);
+  transition: .2s;
+}
+
+.ballo1 {
+  position: absolute;
+  left: 318px;
+  top: 790px;
+  clip-path: inset(36px 36px 36px 36px round 50%);
+  transition: .2s;
+}
+
+.ballo2 {
+  position: absolute;
+  left: 484px;
+  top: 1034px;
+  clip-path: inset(45px 45px 45px 45px round 50%);
+  transition: .2s;
+}
+
+.ballo3 {
+  position: absolute;
+  left: 416px;
+  top: 598px;
+  clip-path: inset(36px 36px 36px 36px round 50%);
+  transition: .2s;
+  opacity: 0%;
+  animation: ball1 .01s linear forwards;
+  animation-delay: 4s;
+}
+
+.ballo4 {
+  position: absolute;
+  left: 853px;
+  top: 553px;
+  clip-path: inset(45px 45px 45px 45px round 50%);
+  transition: .2s;
+}
+
+.ballo img:hover {
+  transform: scale(1.1);
+}
+
+.balls img:hover {
+  transform: scale(1.1);
+}
+
+@keyframes ball1 {
+  99% {opacity: 0%;}
+  100% {opacity: 100%;}
+}

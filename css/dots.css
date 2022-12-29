@@ -1,0 +1,135 @@
+.dot__orange {
+  position: absolute;
+  height: 22px;
+  width: 22px;
+  border-radius: 11px;
+  background: #FF5E00;
+}
+
+.dot__white {
+  position: absolute;
+  height: 22px;
+  width: 22px;
+  border-radius: 11px;
+  background: white;
+}
+
+.dot1 {
+  top: 44px;
+  left: 66px;
+  animation: dot1 .9s infinite ease-in-out;
+  animation-direction: alternate;
+}
+
+.dot2 {
+  top: 100px;
+  left: 320px;
+  animation: dot2 2s infinite ease-in-out;
+  animation-direction: alternate;
+}
+
+.dot3 {
+  top: 213px;
+  left: 73px;
+  animation: dot3 1.5s infinite ease-in-out;
+  animation-direction: alternate;
+}
+
+.dot4 {
+  top: 224px;
+  left: 257px;
+  animation: dot4 1.6s infinite ease-in-out;
+  animation-direction: alternate;
+}
+
+.dot5 {
+  top: 278px;
+  left: 187px;
+  animation: dot5 1.8s infinite ease-in-out;
+  animation-direction: alternate;
+}
+
+.dot6 {
+  top: 375px;
+  left: 100px;
+  animation: dot6 1.4s infinite ease-in-out;
+  animation-direction: alternate;
+}
+
+.dot7 {
+  top: 400px;
+  left: 300px;
+  animation: dot7 2s infinite ease-in-out;
+  animation-direction: alternate;
+}
+
+.dot8 {
+  top: 529px;
+  left: 57px;
+  animation: dot8 1s infinite ease-in-out;
+  animation-direction: alternate;
+}
+
+.dot9 {
+  top: 476px;
+  left: 189px;
+  animation: dot9 2.1s infinite ease-in-out;
+  animation-direction: alternate;
+}
+
+.dot10 {
+  top: 563px;
+  left: 298px;
+  animation: dot10 1.3s infinite ease-in-out;
+  animation-direction: alternate;
+}
+
+@keyframes dot1 {
+  0% {transform: translate(0px,0px);}
+  100% {transform: translate(30px,250px);}
+}
+
+@keyframes dot2 {
+  0% {transform: translate(0px,0px);}
+  100% {transform: translate(-20px,400px);}
+}
+
+@keyframes dot3 {
+  0% {transform: translate(0px,0px);}
+  100% {transform: translate(60px,-50px);}
+}
+
+@keyframes dot4 {
+  0% {transform: translate(0px,0px);}
+  100% {transform: translate(80px,-130px);}
+}
+
+@keyframes dot5 {
+  0% {transform: translate(0px,0px);}
+  100% {transform: translate(-90px,182px);}
+}
+
+@keyframes dot6 {
+  0% {transform: translate(0px,0px);}
+  100% {transform: translate(80px,-250px);}
+}
+
+@keyframes dot7 {
+  0% {transform: translate(0px,0px);}
+  100% {transform: translate(-30px,-150px);}
+}
+
+@keyframes dot8 {
+  0% {transform: translate(0px,0px);}
+  100% {transform: translate(30px,40px);}
+}
+
+@keyframes dot9 {
+  0% {transform: translate(0px,0px);}
+  100% {transform: translate(-100px,-80px);}
+}
+
+@keyframes dot10 {
+  0% {transform: translate(0px,0px);}
+  100% {transform: translate(10px,-200px);}
+}

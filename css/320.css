@@ -1,0 +1,32 @@
+
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .basketball {
+    height: 25vh;
+  }
+
+  .fromtheearth {
+    height: 25vh;
+    margin-top: -10px;
+  }
+
+  .die__circle {
+    white-space: nowrap;
+    width: 250px;
+    height: 90px;
+    left: 10px;
+    top: 100px;
+    padding-top: 30px;
+  }
+
+    .die__circle p {
+      font-size: 16px;
+    }
+
+  .die__circle__back {
+    width: 250px;
+    height: 90px;
+    left: 10px;
+    top: 100px;
+  }
+}
