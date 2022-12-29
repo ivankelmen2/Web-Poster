@@ -27,6 +27,34 @@ header {
   position: relative;
 }
 
+footer {
+  position: relative;
+  color: white;
+  margin: 0 20px 20px 20px;
+  overflow: hidden;
+  clip-path: inset(0 0 0 0 round 10px);
+}
+
+footer img {
+  animation: move__footer 10s infinite ease-in-out;
+}
+
+footer p {
+  position: absolute;
+  top: 253px;
+  left: 20px;
+  width: 200px;
+  text-transform: none;
+  font-size: 18px;
+  mix-blend-mode: difference;
+}
+
+.wrappe {
+  clip-path: inset(30 0 30 30 round 10px);
+  overflow-x: hidden;
+  margin-right: 20px;
+}
+
 .basketball {
   margin-bottom: 20px;
   animation: move__basketball 10s ease-in-out infinite;
@@ -35,18 +63,6 @@ header {
 .fromtheearth {
   margin-left: -2200px;
   animation: move__fromtheearth 19s ease-in-out infinite;
-}
-
-@keyframes move__fromtheearth {
-  0% {transform: translateX(0)}
-  50% {transform: translateX(51.7%);}
-  100% {transform: translateX(0)}
-}
-
-@keyframes move__basketball {
-  0% {transform: translateX(0)}
-  50% {transform: translateX(-42.3%);}
-  100% {transform: translateX(0)}
 }
 
 .die__circle {
@@ -61,7 +77,6 @@ header {
   padding-top: 50px;
   transition: .8s;
 }
-
 
 .die__circle:hover {
   transform: rotate(10deg);
@@ -102,15 +117,6 @@ header {
 
 .team:hover {
   animation-play-state: paused;
-}
-
-.wrapp {
-  clip-path: inset(0 0 0 0 round 10px);
-}
-
-@keyframes team {
-  0% {margin-top: -1862px;}
-  100% {margin-top: 0;}
 }
 
 .player {
@@ -158,11 +164,6 @@ header {
   width: 150px;
   transform: rotate(18deg);
   text-align: center;
-}
-
-@keyframes star {
-  0% {transform: rotate(0deg);}
-  100% {transform: rotate(360deg);}
 }
 
 .active {
@@ -214,6 +215,92 @@ header {
   margin-right: 20px;
 }
 
+.dot__orange {
+  position: absolute;
+  height: 22px;
+  width: 22px;
+  border-radius: 11px;
+  background: #FF5E00;
+}
+
+.dot__white {
+  position: absolute;
+  height: 22px;
+  width: 22px;
+  border-radius: 11px;
+  background: white;
+}
+
+.dot1 {
+  top: 44px;
+  left: 66px;
+  animation: dot1 .9s infinite ease-in-out;
+  animation-direction: alternate;
+}
+
+.dot2 {
+  top: 100px;
+  left: 320px;
+  animation: dot2 2s infinite ease-in-out;
+  animation-direction: alternate;
+}
+
+.dot3 {
+  top: 213px;
+  left: 73px;
+  animation: dot3 1.5s infinite ease-in-out;
+  animation-direction: alternate;
+}
+
+.dot4 {
+  top: 224px;
+  left: 257px;
+  animation: dot4 1.6s infinite ease-in-out;
+  animation-direction: alternate;
+}
+
+.dot5 {
+  top: 278px;
+  left: 187px;
+  animation: dot5 1.8s infinite ease-in-out;
+  animation-direction: alternate;
+}
+
+.dot6 {
+  top: 375px;
+  left: 100px;
+  animation: dot6 1.4s infinite ease-in-out;
+  animation-direction: alternate;
+}
+
+.dot7 {
+  top: 400px;
+  left: 300px;
+  animation: dot7 2s infinite ease-in-out;
+  animation-direction: alternate;
+}
+
+.dot8 {
+  top: 529px;
+  left: 57px;
+  animation: dot8 1s infinite ease-in-out;
+  animation-direction: alternate;
+}
+
+.dot9 {
+  top: 476px;
+  left: 189px;
+  animation: dot9 2.1s infinite ease-in-out;
+  animation-direction: alternate;
+}
+
+.dot10 {
+  top: 563px;
+  left: 298px;
+  animation: dot10 1.3s infinite ease-in-out;
+  animation-direction: alternate;
+}
+
 .tickets {
   width: 441px;
   clip-path: inset(0 0 0 0 round 10px);
@@ -247,12 +334,6 @@ header {
   animation: tick 3s infinite ease-in-out;
   animation-direction: alternate-reverse;
 }
-
-@keyframes tick {
-  0% {transform: translateX(0);}
-  100% {transform: translateX(-40%);}
-}
-
 
 .tape {
   height: 50px;
@@ -292,9 +373,124 @@ header {
   content: "управляем гравитацией • управляем гравитацией • управляем гравитацией • управляем гравитацией • "
 }
 
-@keyframes row {
-  0% {transform: translateX(0);}
-  100% {transform: translateX(-50%);}
+.planet1 {
+  background: white;
+  width: 66px;
+  height: 66px;
+  position: absolute;
+  left: 190px;
+  top: 431px;
+  border-radius: 50%;
+  transition: 1s;
+  transition-timing-function: cubic-bezier(.71,.27,.39,1.29);
+}
+
+.planet2 {
+  background: white;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 180px;
+  top: 392px;
+  border-radius: 50%;
+  transition: 1s;
+  transition-timing-function: cubic-bezier(.71,.27,.39,1.29);
+}
+
+.planet3 {
+  background: white;
+  width: 44px;
+  height: 44px;
+  position: absolute;
+  left: 369px;
+  top: 438px;
+  border-radius: 50%;
+  transition: 1s;
+  transition-timing-function: cubic-bezier(.71,.27,.39,1.29);
+}
+
+.planet4 {
+  background: white;
+  width: 74px;
+  height: 74px;
+  position: absolute;
+  left: 433px;
+  top: 410px;
+  border-radius: 50%;
+  transition: 1s;
+  transition-timing-function: cubic-bezier(.71,.27,.39,1.29);
+}
+
+.planet5 {
+  background: white;
+  width: 72px;
+  height: 72px;
+  position: absolute;
+  left: 608px;
+  top: 410px;
+  border-radius: 50%;
+  transition: 1s;
+  transition-timing-function: cubic-bezier(.71,.27,.39,1.29);
+}
+
+.planet6 {
+  background: white;
+  width: 44px;
+  height: 44px;
+  position: absolute;
+  left: 758px;
+  top: 439px;
+  border-radius: 50%;
+  transition: 1s;
+  transition-timing-function: cubic-bezier(.71,.27,.39,1.29);
+}
+
+.planet7 {
+  background: white;
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  left: 810px;
+  top: 460px;
+  border-radius: 50%;
+  transition: 1s;
+  transition-timing-function: cubic-bezier(.71,.27,.39,1.29);
+}
+
+.planet8 {
+  background: white;
+  width: 76px;
+  height: 76px;
+  position: absolute;
+  left: 903px;
+  top: 406px;
+  border-radius: 50%;
+  transition: 1s;
+  transition-timing-function: cubic-bezier(.71,.27,.39,1.29);
+}
+
+.planet9 {
+  background: white;
+  width: 54px;
+  height: 54px;
+  position: absolute;
+  left: 1042px;
+  top: 428px;
+  border-radius: 50%;
+  transition: 1s;
+  transition-timing-function: cubic-bezier(.71,.27,.39,1.29);
+}
+
+.planet10 {
+  background: white;
+  width: 44px;
+  height: 44px;
+  position: absolute;
+  left: 935px;
+  top: 438px;
+  border-radius: 50%;
+  transition: 1s;
+  transition-timing-function: cubic-bezier(.71,.27,.39,1.29);
 }
 
 .gravity {
@@ -313,6 +509,7 @@ header {
 
 .gravity__button:hover {
   border-color: #FF5E00;
+  background-color: #FF5E00; 
   color: #FF5E00;
 }
 
@@ -356,47 +553,90 @@ header {
   transform: translateY(-100px);
 }
 
-footer {
-  position: relative;
-  color: white;
-  margin: 0 20px 20px 20px;
-  overflow: hidden;
-  clip-path: inset(0 0 0 0 round 10px);
+@keyframes move__fromtheearth {
+  0% {transform: translateX(0)}
+  50% {transform: translateX(51.7%);}
+  100% {transform: translateX(0)}
+}
+
+@keyframes move__basketball {
+  0% {transform: translateX(0)}
+  50% {transform: translateX(-42.3%);}
+  100% {transform: translateX(0)}
+}
+
+@keyframes team {
+  0% {margin-top: -1862px;}
+  100% {margin-top: 0;}
+}
+
+@keyframes star {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
+}
+
+@keyframes tick {
+  0% {transform: translateX(0);}
+  100% {transform: translateX(-40%);}
+}
+
+@keyframes dot1 {
+  0% {transform: translate(0px,0px);}
+  100% {transform: translate(30px,250px);}
+}
+
+@keyframes dot2 {
+  0% {transform: translate(0px,0px);}
+  100% {transform: translate(-20px,400px);}
+}
+
+@keyframes dot3 {
+  0% {transform: translate(0px,0px);}
+  100% {transform: translate(60px,-50px);}
+}
+
+@keyframes dot4 {
+  0% {transform: translate(0px,0px);}
+  100% {transform: translate(80px,-130px);}
+}
+
+@keyframes dot5 {
+  0% {transform: translate(0px,0px);}
+  100% {transform: translate(-90px,182px);}
+}
+
+@keyframes dot6 {
+  0% {transform: translate(0px,0px);}
+  100% {transform: translate(80px,-250px);}
+}
+
+@keyframes dot7 {
+  0% {transform: translate(0px,0px);}
+  100% {transform: translate(-30px,-150px);}
+}
+
+@keyframes dot8 {
+  0% {transform: translate(0px,0px);}
+  100% {transform: translate(30px,40px);}
+}
+
+@keyframes dot9 {
+  0% {transform: translate(0px,0px);}
+  100% {transform: translate(-100px,-80px);}
+}
+
+@keyframes dot10 {
+  0% {transform: translate(0px,0px);}
+  100% {transform: translate(10px,-200px);}
+}
+
+@keyframes row {
+  0% {transform: translateX(0);}
+  100% {transform: translateX(-50%);}
 }
 
 @keyframes move__footer {
   0% {transform: translateX(0)}
   50% {transform: translateX(-35.5%);}
   100% {transform: translateX(0)}
-}
-
-.footer__img {
-  animation: move__footer 10s infinite ease-in-out;
-}
-
-.text {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  top: 200px;
-}
-
-.logo {
-  mix-blend-mode: difference;
-}
-
-.text__p {
-  /* position: absolute;
-  top: 253px;
-  left: 20px; */
-  width: 200px;
-  text-transform: none;
-  font-size: 18px;
-  mix-blend-mode: difference;
-}
-
-.wrappe {
-  clip-path: inset(30 30 30 30 round 10px);
-  overflow-x: hidden;
 }

@@ -1,12 +1,261 @@
+@media only screen and (min-device-width: 768px) and (max-device-width: 1300px) {
+  header {
+    width: 768px;
+    height: 442px;
+  }
 
+  body {
+    margin: 0 auto;
+    width: 768px;
+  }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  footer img {
+    height: 200px;
+  }
+
   .basketball {
-    height: 25vh;
+    height: 200px
   }
 
   .fromtheearth {
-    height: 25vh;
+    height: 200px
+  }
+
+  .die__circle {
+    left: 156px;
+    top: 123px;
+  }
+
+  .die__circle__back {
+    left: 156px;
+    top: 123px;
+  }
+
+  .team__and__action {
+    height: 1036px;
+  }
+
+  .team {
+    width: 245px;
+  }
+
+  .player {
+    height: 281px;
+    width: 245px;
+    padding: 70px 0 0 30px;
+  }
+
+  .player > img {
+    width: 200px;
+  }
+
+  .die__ball {
+    left: 500px;
+  }
+
+  .balls {
+    width: 505px;
+  }
+
+  .ball1 {
+    position: absolute;
+    left: 473px;
+    top: -323px;
+    clip-path: inset(45px 45px 45px 45px round 50%);
+    transition: .2s;
+  }
+
+  .ball1-1 {
+    position: absolute;
+    left: 50px;
+    top: -56px;
+    clip-path: inset(45px 45px 45px 45px round 50%);
+    transition: .2s;
+  }
+
+  .ball2 {
+    position: absolute;
+    left: -147px;
+    top: 310px;
+    z-index: 1;
+    clip-path: inset(45px 45px 45px 45px round 50%);
+    transition: .2s;
+  }
+
+  .ball3 {
+    position: absolute;
+    left: 550px;
+    top: 404px;
+    clip-path: inset(45px 45px 45px 45px round 50%);
+    transition: .2s;
+  }
+
+  .ball3-1 {
+    position: absolute;
+    left: 638px;
+    top: 292px;
+    clip-path: inset(45px 45px 45px 45px round 50%);
+    transition: .2s;
+  }
+
+  .ball4 {
+    position: absolute;
+    left: 395px;
+    top: 488px;
+    clip-path: inset(45px 45px 45px 45px round 50%);
+    transition: .2s;
+  }
+
+  .ball5 {
+    position: absolute;
+    left: 226px;
+    top: 276px;
+    clip-path: inset(20px 20px 20px 20px round 50%);
+    transition: .2s;
+  }
+
+  .ball6 {
+    position: absolute;
+    left: 207px;
+    top: 446px;
+    clip-path: inset(45px 45px 45px 45px round 50%);
+    transition: .2s;
+  }
+
+  .ball7 {
+    position: absolute;
+    left: -125px;
+    top: -140px;
+    clip-path: inset(10px 10px 10px 10px round 50%);
+    transition: .2s;
+  }
+
+  .ball8 {
+    position: absolute;
+    left: -254px;
+    top: 50px;
+    clip-path: inset(45px 45px 45px 45px round 50%);
+    transition: .2s;
+  }
+
+  .ball9 {
+    position: absolute;
+    left: 75px;
+    top: 372px;
+    clip-path: inset(45px 45px 45px 45px round 50%);
+    transition: .2s;
+  }
+
+  .ball10 {
+    position: absolute;
+    left: 183px;
+    top: 311px;
+    clip-path: inset(45px 45px 45px 45px round 50%);
+    transition: .2s;
+  }
+
+  .ball11 {
+    position: absolute;
+    left: 430px;
+    top: 333px;
+    clip-path: inset(40px 40px 40px 40px round 50%);
+    transition: .2s;
+  }
+
+  .ball12 {
+    position: absolute;
+    left: 173px;
+    top: -290px;
+    clip-path: inset(45px 45px 45px 45px round 50%);
+    transition: .2s;
+  }
+
+  .ballo1 {
+    position: absolute;
+    left: 318px;
+    top: 790px;
+    clip-path: inset(36px 36px 36px 36px round 50%);
+    transition: .2s;
+  }
+
+  .ballo2 {
+    position: absolute;
+    left: 484px;
+    top: 1034px;
+    clip-path: inset(45px 45px 45px 45px round 50%);
+    transition: .2s;
+  }
+
+  .ballo3 {
+    position: absolute;
+    left: 416px;
+    top: 598px;
+    clip-path: inset(36px 36px 36px 36px round 50%);
+    transition: .2s;
+    opacity: 0%;
+    animation: ball1 .01s linear forwards;
+    animation-delay: 4s;
+  }
+
+  .ballo4 {
+    position: absolute;
+    left: 853px;
+    top: 553px;
+    clip-path: inset(45px 45px 45px 45px round 50%);
+    transition: .2s;
+  }
+
+  .ballo img:hover {
+    transform: scale(1.1);
+  }
+
+  .balls img:hover {
+    transform: scale(1.1);
+  }
+
+  .game {
+    width: 245px;
+    height: 400px;
+    background-size: contain;
+    border-radius: 10px;
+    margin-right: 20px;
+  }
+
+  .dot1, .dot2, .dot3, .dot4, .dot5, .dot6, .dot7, .dot8, .dot9, .dot10 {
+    opacity: 0%;
+  }
+
+  .tickets {
+    width: 240px;
+    height: 450px;
+  }
+}
+
+@media only screen and (min-device-width: 360px) and (max-device-width: 767px) {
+
+  body {
+    width: 360px;
+    margin: 0 auto;
+  }
+
+  header {
+    height: 450px;
+  }
+
+  footer img {
+    height: 200px;
+  }
+
+  footer p {
+    top: 135px;
+  }
+
+  .basketball {
+    height: 200px;
+  }
+
+  .fromtheearth {
+    height: 200px;
     margin-top: -10px;
   }
 
@@ -19,14 +268,35 @@
     padding-top: 30px;
   }
 
-    .die__circle p {
-      font-size: 16px;
-    }
+  .die__star {
+    background-size: contain;
+    width: 200px;
+    height: 200px;
+    padding: 75px 0 0 26px;
+  }
+
+  .die__circle p {
+    font-size: 16px;
+  }
+
+  .die__star p {
+    font-size: 16px;
+  }
 
   .die__circle__back {
     width: 250px;
     height: 90px;
     left: 10px;
     top: 100px;
+  }
+
+  .player {
+    height: 360px;
+    width: 360px;
+    padding: 70px 0 0 60px;
+  }
+
+  .player > img {
+    width: 200px;
   }
 }
